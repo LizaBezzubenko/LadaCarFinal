@@ -1,0 +1,19 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+    <lightning:recordEditForm objectApiName="Lead" recordId="{!v.recordId}">
+        <lightning:notificationsLibrary aura:id="notifLib"/>
+       
+        
+        <lightning:inputField aura:id="field" fieldName="Name" />
+        <lightning:inputField aura:id="field" fieldName="Phone" />
+        <lightning:inputField aura:id="field" fieldName="Address" />
+        <lightning:inputField aura:id="field" fieldName="Driver_s_license__c" />
+        <lightning:inputField aura:id="field" fieldName="AgreeCheckbox__c" />
+        
+
+          <div class="slds-m-top_medium">
+            <lightning:button type="submit" label="Send" onclick="{!c.handleSuccess}" />
+            <lightning:button label="Cancel" onclick="{!c.handleReset}" />   
+                
+          </div> 
+    </lightning:recordEditForm>
+</aura:component>

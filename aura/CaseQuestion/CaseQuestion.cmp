@@ -1,0 +1,16 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+    <lightning:recordEditForm objectApiName="Case" recordId="{!v.recordId}">
+        <lightning:notificationsLibrary aura:id="notifLib"/>
+       
+        
+        <lightning:inputField aura:id="field" fieldName="Your_Email_address__c" />
+        <lightning:inputField aura:id="field" fieldName="Subject" />
+         <lightning:inputField aura:id="field" fieldName="Question__c" />
+
+          <div class="slds-m-top_medium">
+            <lightning:button type="submit" label="Ask Question" onclick="{!c.handleSuccess}" />
+            <lightning:button label="Cancel" onclick="{!c.handleReset}" />   
+                
+          </div> 
+    </lightning:recordEditForm>
+</aura:component>

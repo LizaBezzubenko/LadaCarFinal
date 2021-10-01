@@ -1,0 +1,11 @@
+<aura:component>
+
+    <aura:attribute name="receivedProduct" type="Product2"/>
+
+        <figure class="slds-image slds-image--card">
+            <a href="javascript:void(0);" class="slds-image__crop  slds-image__crop--16-by-9">
+                <img src="{!v.receivedProduct.URLImage__c}" alt="Photo is not available"/>
+            </a>
+        </figure>
+
+</aura:component>
